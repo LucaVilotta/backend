@@ -3,6 +3,7 @@ package com.lvportfolio.argpro.Controller;
 import com.lvportfolio.argpro.Entity.Persona;
 import com.lvportfolio.argpro.Interface.IPersonaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -17,12 +18,14 @@ public class PersonaController {
         return ipersonaService.getPersona();
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @PostMapping("/personas/crear")
     public String createPersona(@RequestBody Persona persona){
         ipersonaService.savePersona(persona);
         return "La persona fué creada correctamente";
     }
 
+    @PreAuthorize("hasRole('ADMIN')")
     @DeleteMapping("/personas/borrar/{id}")
     public String deletePersona(@PathVariable Long id){
         ipersonaService.deletePersona(id);
@@ -30,6 +33,8 @@ public class PersonaController {
     }
 
     //URL: PUERTO/personas/editar/id/nombre & apellido & img
+
+    @PreAuthorize("hasRole('ADMIN')")
     @PutMapping("/personas/editar/{id}")
     public Persona editPersona(@PathVariable Long id,
                                @RequestBody Persona persona){
