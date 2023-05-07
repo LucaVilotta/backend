@@ -60,6 +60,7 @@ public class ExperienciaController {
 
         Experiencia experiencia = impExperienciaService.getOne(id).get();
         experiencia.setPuesto(dtoexp.getPuesto());
+        experiencia.setLugar((dtoexp.getLugar()));
 
         impExperienciaService.save(experiencia);
         return new ResponseEntity(new Mensaje("Experiencia actualizada"), HttpStatus.OK);
