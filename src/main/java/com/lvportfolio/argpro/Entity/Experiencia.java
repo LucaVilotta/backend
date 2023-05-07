@@ -13,14 +13,18 @@ import lombok.Setter;
 @Entity
 public class Experiencia {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
-    @NotNull
-    @Size(min = 1, max = 50, message = "No cumple con la longitud")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
     private String puesto;
-
-    @NotNull
-    @Size(min = 1, max = 80, message = "No cumple con la longitud")
     private String lugar;
+
+    //Constructores
+
+    public Experiencia() {
+    }
+
+    public Experiencia(String puesto, String lugar) {
+        this.puesto = puesto;
+        this.lugar = lugar;
+    }
 }

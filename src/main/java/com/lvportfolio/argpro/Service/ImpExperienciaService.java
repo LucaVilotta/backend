@@ -1,36 +1,44 @@
 package com.lvportfolio.argpro.Service;
 
 import com.lvportfolio.argpro.Entity.Experiencia;
-import com.lvportfolio.argpro.Interface.IExperienciaService;
 import com.lvportfolio.argpro.Repository.IExperienciaRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
-public class ImpExperienciaService implements IExperienciaService {
+@Transactional
+public class ImpExperienciaService{
     @Autowired IExperienciaRepository iexperienciaRepository;
 
-    @Override
-    public List<Experiencia> getExperiencia() {
-        List<Experiencia> experiencia = iexperienciaRepository.findAll();
-        return experiencia;
+    public List<Experiencia> list(){
+        return iexperienciaRepository.findAll();
     }
 
-    @Override
-    public void saveExperiencia(Experiencia experiencia) {
-        iexperienciaRepository.save(experiencia);
+    public Optional<Experiencia> getOne(int id){
+        return iexperienciaRepository.findById(id);
     }
 
-    @Override
-    public void deleteExperiencia(Long id) {
+    public Optional<Experiencia> getByPuesto(String puesto){
+        return iexperienciaRepository.findByPuesto(puesto);
+    }
+
+    public void save(Experiencia expe){
+        iexperienciaRepository.save(expe);
+    }
+
+    public void delete(int id){
         iexperienciaRepository.deleteById(id);
     }
 
-    @Override
-    public Experiencia findExperiencia(Long id) {
-        Experiencia experiencia = iexperienciaRepository.findById(id).orElse(null);
-        return experiencia;
+    public boolean existsById(int id){
+        return iexperienciaRepository.existsById(id);
+    }
+
+    public boolean existsByPuesto(String puesto){
+        return iexperienciaRepository.existsByPuesto(puesto);
     }
 }
