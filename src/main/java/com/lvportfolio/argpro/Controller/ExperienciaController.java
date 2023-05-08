@@ -35,6 +35,8 @@ public class ExperienciaController {
 
     @PostMapping("/create")
     public ResponseEntity<?> create(@RequestBody dtoExperiencia dtoexp){
+        if(dtoexp == null)
+            return new ResponseEntity(new Mensaje("El objeto dtoExperiencia es nulo"), HttpStatus.BAD_REQUEST);
         if(StringUtils.isBlank(dtoexp.getPuesto()))
             return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
         if(impExperienciaService.existsByPuesto(dtoexp.getPuesto()))
