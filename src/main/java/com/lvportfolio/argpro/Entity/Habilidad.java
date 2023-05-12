@@ -11,13 +11,20 @@ import lombok.Setter;
 @Entity
 public class Habilidad {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
-
-    private String campo; /*puedo volar el campo a la mierda*/
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
 
     private String habilidad;
 
     private String porcentaje;
 
+    //Constructores
+
+    public Habilidad() {
+    }
+
+    public Habilidad(String habilidad, String porcentaje) {
+        this.habilidad = habilidad;
+        this.porcentaje = porcentaje;
+    }
 }
