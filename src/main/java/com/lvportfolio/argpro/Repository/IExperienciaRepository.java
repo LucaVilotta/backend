@@ -7,7 +7,7 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface iExperienciaRepository extends JpaRepository<Experiencia, Integer> {
+public interface IExperienciaRepository extends JpaRepository<Experiencia, Integer> {
     public Optional<Experiencia> findByPuesto(String puesto);
     public boolean existsByPuesto(String puesto);
 }
