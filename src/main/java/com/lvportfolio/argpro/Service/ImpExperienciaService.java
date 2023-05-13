@@ -1,7 +1,7 @@
 package com.lvportfolio.argpro.Service;
 
 import com.lvportfolio.argpro.Entity.Experiencia;
-import com.lvportfolio.argpro.Repository.ExperienciaRepository;
+import com.lvportfolio.argpro.Repository.iExperienciaRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -13,7 +13,7 @@ import java.util.Optional;
 @Transactional
 public class ImpExperienciaService{
     @Autowired
-    ExperienciaRepository iexperienciaRepository;
+    iExperienciaRepository iexperienciaRepository;
 
     public List<Experiencia> list(){
         return iexperienciaRepository.findAll();
