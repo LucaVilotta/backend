@@ -1,4 +1,4 @@
-FROM amazoncorretto:17-alpine-jdk
+FROM openjdk:17-jdk-slim
 
 COPY target/argpro.jar app.jar
 
