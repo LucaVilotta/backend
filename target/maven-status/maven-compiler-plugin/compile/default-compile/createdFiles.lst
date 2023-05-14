@@ -13,7 +13,6 @@ com\lvportfolio\argpro\Security\Service\RolService.class
 com\lvportfolio\argpro\Dto\dtoExperiencia.class
 com\lvportfolio\argpro\Security\MainSecurity.class
 com\lvportfolio\argpro\Service\ImpHabilidadService.class
-com\lvportfolio\argpro\Interface\IEducacionService.class
 com\lvportfolio\argpro\Security\Entity\UsuarioPrincipal.class
 com\lvportfolio\argpro\Entity\Persona.class
 com\lvportfolio\argpro\Controller\ExperienciaController.class
@@ -33,6 +32,7 @@ com\lvportfolio\argpro\Repository\IProyectoRepository.class
 com\lvportfolio\argpro\Security\Enums\RolNombre.class
 com\lvportfolio\argpro\Entity\Proyecto.class
 com\lvportfolio\argpro\Dto\dtoHabilidad.class
+com\lvportfolio\argpro\Dto\dtoEducacion.class
 com\lvportfolio\argpro\Entity\Experiencia.class
 com\lvportfolio\argpro\Security\jwt\JwtEntryPoint.class
 com\lvportfolio\argpro\Security\Repository\IUsuarioRepository.class

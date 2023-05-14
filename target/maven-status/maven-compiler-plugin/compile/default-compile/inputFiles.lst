@@ -10,6 +10,7 @@ D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\ar
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Security\Service\UserDetailsImpl.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Dto\dtoExperiencia.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Security\Dto\NuevoUsuario.java
+D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Dto\dtoEducacion.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Security\Entity\UsuarioPrincipal.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Security\Service\UsuarioService.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Interface\IProyectoService.java
@@ -41,5 +42,4 @@ D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\ar
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Entity\Experiencia.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Dto\dtoHabilidad.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Entity\Proyecto.java
-D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Interface\IEducacionService.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Security\Dto\JwtDto.java
