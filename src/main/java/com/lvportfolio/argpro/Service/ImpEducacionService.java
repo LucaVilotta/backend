@@ -1,36 +1,44 @@
 package com.lvportfolio.argpro.Service;
 
 import com.lvportfolio.argpro.Entity.Educacion;
-import com.lvportfolio.argpro.Interface.IEducacionService;
 import com.lvportfolio.argpro.Repository.IEducacionRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
-public class ImpEducacionService implements IEducacionService {
+@Transactional
+public class ImpEducacionService{
     @Autowired IEducacionRepository ieducacionRepository;
 
-    @Override
-    public List<Educacion> getEducacion() {
-        List<Educacion> educacion = ieducacionRepository.findAll();
-        return educacion;
+    public List<Educacion> list(){
+        return ieducacionRepository.findAll();
     }
 
-    @Override
-    public void saveEducacion(Educacion educacion) {
-        ieducacionRepository.save(educacion);
+    public Optional<Educacion> getOne(int id){
+        return ieducacionRepository.findById(id);
     }
 
-    @Override
-    public void deleteEducacion(Long id) {
+    public Optional<Educacion> getByInstitucion(String educacion){
+        return ieducacionRepository.findByInstitucion(educacion);
+    }
+
+    public void save(Educacion edu){
+        ieducacionRepository.save(edu);
+    }
+
+    public void delete(int id){
         ieducacionRepository.deleteById(id);
     }
 
-    @Override
-    public Educacion findEducacion(Long id) {
-        Educacion educacion = ieducacionRepository.findById(id).orElse(null);
-        return educacion;
+    public boolean existsById(int id){
+        return ieducacionRepository.existsById(id);
+    }
+
+    public boolean existsByInstitucion(String educacion){
+        return ieducacionRepository.existsByInstitucion(educacion);
     }
 }

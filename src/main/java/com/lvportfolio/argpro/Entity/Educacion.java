@@ -11,13 +11,17 @@ import lombok.Setter;
 public class Educacion {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
-
-    @NotNull
-    @Size(min = 1, max = 50, message = "No cumple con la longitud")
+    private int id;
     private String institucion;
-
-    @NotNull
-    @Size(min = 1, max = 80, message = "No cumple con la longitud")
     private String titulo;
+    
+    //Constructores
+
+    public Educacion() {
+    }
+
+    public Educacion(String institucion, String titulo) {
+        this.institucion = institucion;
+        this.titulo = titulo;
+    }
 }
