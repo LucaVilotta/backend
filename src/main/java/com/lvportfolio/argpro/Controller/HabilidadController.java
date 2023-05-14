@@ -17,7 +17,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("habilidades")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfolio-frontend-luca.web.app")
 public class HabilidadController {
     @Autowired
     ImpHabilidadService impHabilidadService;

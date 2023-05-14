@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("explab")
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://portfolio-frontend-luca.web.app")
 public class ExperienciaController {
     @Autowired
     ImpExperienciaService impExperienciaService;

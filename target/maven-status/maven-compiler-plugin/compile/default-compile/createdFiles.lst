@@ -1,4 +1,6 @@
+com\lvportfolio\argpro\Repository\IEducacionRepository.class
 com\lvportfolio\argpro\Service\ImpPersonaService.class
+com\lvportfolio\argpro\Entity\Educacion.class
 com\lvportfolio\argpro\Entity\Habilidad.class
 com\lvportfolio\argpro\Security\Dto\LoginUsuario.class
 com\lvportfolio\argpro\Security\jwt\JwtProvider.class
@@ -11,11 +13,13 @@ com\lvportfolio\argpro\Security\Service\RolService.class
 com\lvportfolio\argpro\Dto\dtoExperiencia.class
 com\lvportfolio\argpro\Security\MainSecurity.class
 com\lvportfolio\argpro\Service\ImpHabilidadService.class
+com\lvportfolio\argpro\Interface\IEducacionService.class
 com\lvportfolio\argpro\Security\Entity\UsuarioPrincipal.class
 com\lvportfolio\argpro\Entity\Persona.class
 com\lvportfolio\argpro\Controller\ExperienciaController.class
 com\lvportfolio\argpro\Security\Controller\Mensaje.class
 com\lvportfolio\argpro\Security\Service\UsuarioService.class
+com\lvportfolio\argpro\Controller\EducacionController.class
 com\lvportfolio\argpro\Interface\IPersonaService.class
 com\lvportfolio\argpro\Controller\ProyectoController.class
 com\lvportfolio\argpro\Controller\HabilidadController.class
@@ -37,4 +41,5 @@ com\lvportfolio\argpro\Security\Dto\JwtDto.class
 com\lvportfolio\argpro\Security\Entity\Usuario.class
 com\lvportfolio\argpro\Service\ImpProyectoService.class
 com\lvportfolio\argpro\Security\Service\UserDetailsImpl.class
+com\lvportfolio\argpro\Service\ImpEducacionService.class
 com\lvportfolio\argpro\Interface\IExperienciaService.class
