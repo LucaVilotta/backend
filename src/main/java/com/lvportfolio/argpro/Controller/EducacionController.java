@@ -2,7 +2,6 @@ package com.lvportfolio.argpro.Controller;
 
 import com.lvportfolio.argpro.Dto.dtoEducacion;
 import com.lvportfolio.argpro.Entity.Educacion;
-import com.lvportfolio.argpro.Interface.IEducacionService;
 import com.lvportfolio.argpro.Security.Controller.Mensaje;
 import com.lvportfolio.argpro.Service.ImpEducacionService;
 import org.springframework.beans.factory.annotation.Autowired;
