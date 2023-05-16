@@ -33,20 +33,20 @@ public class PersonaController {
         return new ResponseEntity(persona, HttpStatus.OK);
     }
 
-    /*@PostMapping("/create")
-    public ResponseEntity<?> create(@RequestBody dtoHabilidad dtohab){
-        if(dtohab == null)
-            return new ResponseEntity(new Mensaje("El objeto dtoHabilidad es nulo"), HttpStatus.BAD_REQUEST);
-        if(StringUtils.isBlank(dtohab.getHabilidad()))
-            return new ResponseEntity(new Mensaje("La habilidad es obligatoria"), HttpStatus.BAD_REQUEST);
-        if(personaService.existsByHabilidad(dtohab.getHabilidad()))
-            return new ResponseEntity(new Mensaje("Esa habilidad existe"), HttpStatus.BAD_REQUEST);
+    @PostMapping("/create")
+    public ResponseEntity<?> create(@RequestBody dtoPersona dtopersona){
+        if(dtopersona == null)
+            return new ResponseEntity(new Mensaje("El objeto dtoPersona es nulo"), HttpStatus.BAD_REQUEST);
+        if(StringUtils.isBlank(dtopersona.getNombre()))
+            return new ResponseEntity(new Mensaje("El nombre es obligatorio"), HttpStatus.BAD_REQUEST);
+        if(personaService.existsByNombre(dtopersona.getNombre()))
+            return new ResponseEntity(new Mensaje("Esa persona existe"), HttpStatus.BAD_REQUEST);
 
-        Habilidad habilidad = new Habilidad(dtohab.getHabilidad(), dtohab.getPorcentaje());
-        personaService.save(habilidad);
+        Persona persona = new Persona(dtopersona.getNombre(), dtopersona.getApellido(), dtopersona.getImg(),dtopersona.getSobreMi(),dtopersona.getEspecializacion());
+        personaService.save(persona);
 
-        return new ResponseEntity(new Mensaje("Habilidad agregada"), HttpStatus.OK);
-    }*/
+        return new ResponseEntity(new Mensaje("Persona agregada"), HttpStatus.OK);
+    }
 
     @PutMapping("/update/{id}")
     public ResponseEntity<?> update(@PathVariable("id") int id, @RequestBody dtoPersona dtopersona){
