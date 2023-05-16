@@ -19,7 +19,6 @@ com\lvportfolio\argpro\Controller\ExperienciaController.class
 com\lvportfolio\argpro\Security\Controller\Mensaje.class
 com\lvportfolio\argpro\Security\Service\UsuarioService.class
 com\lvportfolio\argpro\Controller\EducacionController.class
-com\lvportfolio\argpro\Interface\IPersonaService.class
 com\lvportfolio\argpro\Controller\ProyectoController.class
 com\lvportfolio\argpro\Controller\HabilidadController.class
 com\lvportfolio\argpro\Security\Dto\NuevoUsuario.class
@@ -32,6 +31,7 @@ com\lvportfolio\argpro\Repository\IProyectoRepository.class
 com\lvportfolio\argpro\Security\Enums\RolNombre.class
 com\lvportfolio\argpro\Entity\Proyecto.class
 com\lvportfolio\argpro\Dto\dtoHabilidad.class
+com\lvportfolio\argpro\Dto\dtoPersona.class
 com\lvportfolio\argpro\Dto\dtoEducacion.class
 com\lvportfolio\argpro\Entity\Experiencia.class
 com\lvportfolio\argpro\Security\jwt\JwtEntryPoint.class

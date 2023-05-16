@@ -23,7 +23,6 @@ D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\ar
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Entity\Educacion.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Security\Controller\Mensaje.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Service\ImpEducacionService.java
-D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Interface\IPersonaService.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Repository\IExperienciaRepository.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Controller\PersonaController.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Security\Entity\Rol.java
@@ -39,6 +38,7 @@ D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\ar
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Repository\IProyectoRepository.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Controller\HabilidadController.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Security\jwt\JwtProvider.java
+D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Dto\dtoPersona.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Entity\Experiencia.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Dto\dtoHabilidad.java
 D:\1-Luca\Programacion\Practicas\backend\argpro\src\main\java\com\lvportfolio\argpro\Entity\Proyecto.java
